@@ -1,0 +1,95 @@
+/* Reset and Basics */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Selection Styles */
+::selection {
+    color: #ffffff;
+    background-color: #7cb342;
+}
+
+/* Navigation Styles */
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px;
+    max-width: 1070px;
+    width: 100%;
+    margin: auto;
+    animation: bounce 2s 1;
+}
+
+.logo-img {
+    max-height: 50px;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu li a {
+    padding: 3px 10px;
+    margin: 0px 15px;
+    color: #3b3b3b;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    transition: all ease 0.3s;
+}
+
+/* ... (other styles remain the same) */
+
+/* Media Queries */
+@media (max-width: 965px) {
+    .navigation {
+        justify-content: space-between;
+        height: 65px;
+        padding: 35px 25px;
+    }
+
+    /* ... (other media query styles) */
+}
+
+@media (max-width: 750px) {
+    /* ... (responsive styles for smaller screens) */
+}
+
+@media (max-width: 500px) {
+    /* ... (responsive styles for even smaller screens) */
+}
+
+@media (max-width: 400px) {
+    /* ... (responsive styles for very small screens) */
+}
+
+@media (max-width: 350px) {
+    /* ... (additional responsive styles) */
+}
+
+/* Additional Styles... */
+
+/* Keyframes */
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+}
